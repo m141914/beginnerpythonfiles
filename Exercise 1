@@ -1,0 +1,25 @@
+import os
+import random
+import sys
+
+print('What is your name?')
+name=sys.stdin.readline()
+
+#age=int(input("What is your age? "))
+
+print('What is your age?')
+age=sys.stdin.readline()
+mage=int(age)
+
+input=int(input('Enter a random number '))
+
+centtime=100-mage
+centyear=2019+centtime
+print(centyear)
+
+propername=name.capitalize()
+
+i=0
+while i<input:
+    print('It will be',centyear,'when you turn 100,',propername,'\n')
+    i +=1
