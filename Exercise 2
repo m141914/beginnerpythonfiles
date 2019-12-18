@@ -1,0 +1,29 @@
+import os
+import sys
+import random
+
+x=int(input("Please enter a number "))
+
+y=x%2
+
+if y == 0:
+    z=x%4
+    if z==0:                           #If the number is a multiple of 4, print out a different message.
+        print('Number is Even and a multiple of 4')
+    else:
+        print('Number is Even')
+else:
+    print('Number is Odd')
+
+#Ask the user for two numbers: one number to check (call it num) and one number to divide by (check).
+#If check divides evenly into num, tell that to the user. If not, print a different appropriate message.
+
+num=int(input("Please enter a number to be divided "))
+check=int(input("Please enter a number to be divided by "))
+
+fin=num%check
+
+if fin==0:
+    print('There is no remainder when the first number is divided by the second number')
+else:
+    print('There is a remainder when the first number is divided by the second number')
